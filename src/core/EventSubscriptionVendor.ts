@@ -23,7 +23,7 @@ export default class EventSubscriptionVendor {
     return subscription
   }
 
-  removeAllSubscriptions(eventType: string): void {
+  removeAllSubscriptions(eventType?: string): void {
     if (eventType === undefined) {
       this.subscriptionsForType = {}
     } else {

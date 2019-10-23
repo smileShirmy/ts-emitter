@@ -24,7 +24,7 @@ export default class BaseEventEmitter {
     })
   }
 
-  removeAllListeners(eventType: string): void {
+  removeAllListeners(eventType?: string): void {
     this.subscriber.removeAllSubscriptions(eventType)
   }
 
